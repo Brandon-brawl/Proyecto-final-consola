@@ -11,6 +11,13 @@ namespace FinalConsola
 
         static void Main(string[] args)
         {
+            int n = 0;
+            do
+            {
+                Console.WriteLine(n);
+                n++;
+            
+           
             int resultado = 0;
             int dato = 0;
             Console.WriteLine("Elige una temperatura \n" +
@@ -60,17 +67,17 @@ namespace FinalConsola
                     break;
                 case 7:
                     Environment.Exit(0);
-                    break;
-                case 8:
-                    Environment.Exit(0);
-                    break;
-                    
-                default:
-                    break;
+                        break;
+                    default:
+                        Console.WriteLine("falta seleccionar la operacion, error");
+
+                        break;
             }
-            Console.WriteLine("n8.-Salir");
-            Console.ReadKey();
             
+             Console.WriteLine("Selecciona cualquier tecla para restear");
+              
+                Console.ReadKey();
+            } while (n < 5) ;
            
 
         }
